@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import pickle
@@ -9,7 +8,7 @@ import textwrap
 
 st.set_page_config(
     page_title="WorthIt",
-    page_icon="✷",
+    page_icon="*C*",
     layout="wide"
 )
 
@@ -25,7 +24,6 @@ with open(os.path.join(MODEL_DIR, "preprocessor.pkl"), "rb") as file:
 
 def render_html(content):
     st.html(textwrap.dedent(content).strip())
-
 
 
 # ---------------- DESIGN + CSS ----------------
@@ -629,8 +627,6 @@ div[data-testid="stFormSubmitButton"] button:hover {
     }
 }
 
-/* MOBILE */
-
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 700px) {
@@ -858,12 +854,15 @@ div[data-testid="stFormSubmitButton"] button:hover {
         font-size: 58px;
     }
 }
+</style>
+""")
+
 
 # ---------------- NAVIGATION ----------------
 
 render_html("""
 <nav class="worth-nav">
-    <a class="worth-logo" href="#top"><span>✷</span> worthit</a>
+    <a class="worth-logo" href="#top"><span>*</span> worthit</a>
 
     <div class="worth-links">
         <a href="#idea">The idea</a>
@@ -1259,13 +1258,11 @@ if submitted:
         )
 
 
-
-
 # ---------------- FOOTER ----------------
 
 render_html("""
 <footer class="worth-footer">
-    <span>✷ WORTHIT</span>
+    <span>* WORTHIT</span>
     <span>THINK TWICE. SPEND WISELY.</span>
 </footer>
 """)
