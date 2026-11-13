@@ -8,7 +8,7 @@ import textwrap
 
 st.set_page_config(
     page_title="WorthIt",
-    page_icon="*C*",
+    page_icon="✷",
     layout="wide"
 )
 
@@ -862,7 +862,7 @@ div[data-testid="stFormSubmitButton"] button:hover {
 
 render_html("""
 <nav class="worth-nav">
-    <a class="worth-logo" href="#top"><span>*</span> worthit</a>
+    <a class="worth-logo" href="#top"><span>✷</span> worthit</a>
 
     <div class="worth-links">
         <a href="#idea">The idea</a>
@@ -1262,7 +1262,7 @@ if submitted:
 
 render_html("""
 <footer class="worth-footer">
-    <span>* WORTHIT</span>
+    <span>✷ WORTHIT</span>
     <span>THINK TWICE. SPEND WISELY.</span>
 </footer>
 """)
