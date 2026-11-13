@@ -631,84 +631,233 @@ div[data-testid="stFormSubmitButton"] button:hover {
 
 /* MOBILE */
 
+/* MOBILE RESPONSIVENESS */
+
 @media (max-width: 700px) {
+
     .block-container {
-        padding: 0 1rem 2rem;
+        padding: 0 14px 2rem;
     }
 
+    /* NAVIGATION */
+
     .worth-nav {
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 13px 0;
+    }
+
+    .worth-logo {
+        font-size: 20px;
     }
 
     .worth-links {
-        gap: 12px;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
     }
 
     .worth-links a {
         font-size: 10px;
+        white-space: nowrap;
     }
 
     .worth-links .nav-cta {
-        padding: 9px 11px;
+        padding: 9px 12px;
     }
 
+    /* HERO */
+
     .hero {
-        padding-top: 65px;
+        padding: 65px 0 35px;
     }
 
     .hero-title {
-        font-size: clamp(75px, 18vw, 120px);
-    }
-
-    .orb-one {
-        width: 70px;
-        height: 70px;
+        font-size: clamp(58px, 17vw, 105px);
+        letter-spacing: -2px;
+        line-height: .84;
     }
 
     .hero-lower {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
+        gap: 18px;
+        margin-top: 30px;
     }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .orb-one {
+        width: 65px;
+        height: 65px;
+    }
+
+    .orb-two {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* STATEMENT */
 
     .statement {
         grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 60px 0;
+        gap: 24px;
+        padding: 55px 0;
     }
 
+    .statement-title {
+        font-size: clamp(52px, 14vw, 80px);
+    }
+
+    .statement-copy {
+        font-size: 14px;
+    }
+
+    /* CHOICES */
+
     .choices {
-        margin: 0 -1rem;
-        padding: 45px 1rem;
+        margin: 0 -14px;
+        padding: 42px 14px;
+    }
+
+    .choices-title {
+        font-size: clamp(48px, 13vw, 75px);
     }
 
     .choice-grid {
-        grid-template-columns: repeat(7, 135px);
+        grid-template-columns: repeat(7, 125px);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 8px;
     }
+
+    .choice {
+        min-height: 120px;
+        padding: 13px;
+    }
+
+    .choice-name {
+        font-size: 26px;
+    }
+
+    /* FORM INTRO */
 
     .form-intro {
-        padding-top: 60px;
+        padding: 55px 0 25px;
     }
+
+    .form-title {
+        font-size: clamp(55px, 14vw, 85px);
+    }
+
+    .form-description {
+        font-size: 13px;
+    }
+
+    /* FORM LAYOUT */
 
     div[data-testid="stForm"] {
-        padding: 22px 16px;
+        padding: 24px 16px;
+        border-radius: 15px;
     }
 
+    div[data-testid="stForm"] [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap !important;
+        gap: 16px !important;
+    }
+
+    div[data-testid="stForm"] [data-testid="column"] {
+        width: 100% !important;
+        min-width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    div[data-testid="stForm"] label p {
+        font-size: 13px !important;
+    }
+
+    div[data-testid="stForm"] div[data-baseweb="select"] > div,
+    div[data-testid="stForm"] div[data-baseweb="input"] > div {
+        min-height: 58px !important;
+    }
+
+    .form-group-title {
+        font-size: 18px;
+    }
+
+    .form-group-copy {
+        font-size: 11px;
+    }
+
+    .form-divider {
+        margin: 25px 0 22px;
+    }
+
+    div[data-testid="stFormSubmitButton"] button {
+        min-height: 56px;
+        font-size: 14px;
+    }
+
+    /* RESULT */
+
     .result {
+        margin-top: 30px;
         padding: 30px 20px;
     }
 
+    .result-heading {
+        font-size: clamp(48px, 13vw, 75px);
+        overflow-wrap: anywhere;
+    }
+
+    .result-description {
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+
     .worth-footer {
         flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+        font-size: 9px;
     }
+
+    /* FLOATING BUTTON */
 
     .floating-decision {
-        right: 14px;
-        bottom: 14px;
+        display: none;
     }
 }
-</style>
-""")
 
+/* SMALL PHONES */
+
+@media (max-width: 380px) {
+
+    .block-container {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .worth-links a {
+        font-size: 9px;
+    }
+
+    .worth-links .nav-cta {
+        padding: 8px 9px;
+    }
+
+    div[data-testid="stForm"] {
+        padding: 20px 12px;
+    }
+
+    .hero-title {
+        font-size: 58px;
+    }
+}
 
 # ---------------- NAVIGATION ----------------
 
